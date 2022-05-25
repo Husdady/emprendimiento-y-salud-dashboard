@@ -1,0 +1,222 @@
+@media (max-width: 1461px) {
+  /*------------- Tablas -------------*/
+  #dashboard .container-table .ant-table-content {
+    overflow: auto hidden;
+  }
+
+  #dashboard .container-table .ant-table-content::-webkit-scrollbar {
+    height: 7px;
+  }
+}
+
+@media (min-width: 1081px) {
+  /*------------- Menu izquierdo -------------*/
+  #dashboard #menu-left {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 385px;
+    z-index: 999;
+  }
+
+  #dashboard #menu-left .menu-left-bottom {
+    position: absolute;
+    bottom: 1.5%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  /*------------- Menu izquierdo -------------*/
+  #dashboard #menu-left {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    position: fixed;
+  }
+
+  #dashboard .menu-left-content-lists {
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+    transition: all .6s linear;
+  }
+
+  #dashboard .menu-left-content-lists.hidden {
+    max-height: 0px;
+  }
+
+  #dashboard .menu-left-content-lists.visible {
+    max-height: 999px;
+  }
+
+  #dashboard #menu-left .wrapper-list .ant-list-items:first-of-type .ant-list-item {
+    padding: 15px 20px !important;
+  }
+
+  #dashboard #menu-left>.wrapper-list .ant-list-item {
+    background-color: var(--theme-bg-default)
+  }
+
+  #dashboard #menu-left>.wrapper-list .ant-list-item .icon {
+    background-color: var(--theme-opacity-100) 
+  }
+
+  /*------------- Contenedor de la parte derecha -------------*/
+  #dashboard #box {
+    width: 90%;
+    margin: 5em auto 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /*------------- Tablas -----------a--*/
+  #dashboard .container-table .ant-table-content::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #dashboard #box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 675px) {
+  /*------------- Botones de acción -------------*/
+  #dashboard #box .container-action-buttons {
+    overflow-x: auto;
+    justify-content: left !important;
+  }
+
+  #dashboard #box .container-action-buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  #dashboard #box .container-action-buttons .action-button {
+    flex-shrink: 0;
+  }
+
+  /*------------- Modal de confirmación -------------*/
+  .ant-modal-body .ant-modal-confirm-body > svg {
+    font-size: 3em;
+  }
+
+  .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
+    font-size: 1.12em;
+  }
+
+  #dashboard #menu-left button.sign-out {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  /*------------- Menu izquierdo -------------*/
+  #dashboard #menu-left {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    z-index: 999;
+  }
+
+  #dashboard #menu-left .wrapper-list.scroller {
+    max-height: 80%;
+  }
+
+  #dashboard .menu-left-content-lists {
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transition: transform .6s linear;
+    height: auto;
+    max-height: initial !important;
+    overflow-x: scroll;
+    background-color: var(--theme-bg-default)
+  }
+  
+  #dashboard .menu-left-content-lists.hidden {
+    transform: translateX(100%);
+  }
+
+  #dashboard .menu-left-content-lists.visible {
+    transform: translateX(0%);
+  }
+
+  /*------------- Contenedor de la parte derecha -------------*/
+  #dashboard #box {
+    margin-top: 4.5rem;
+  }
+
+  #dashboard #box .wrap-title::-webkit-scrollbar,
+  #dashboard #box .container-breadcrumb .ant-breadcrumb::-webkit-scrollbar {
+    display: none;
+  }
+
+  #dashboard #box .container-breadcrumb .ant-breadcrumb {
+    display: flex;
+  }
+
+  #dashboard #box .wrap-title,
+  #dashboard #box .container-breadcrumb .ant-breadcrumb {
+    overflow-x: auto;
+  }
+
+  #dashboard #box .wrap-title > .d-flex,
+  #dashboard #box .wrap-title > button,
+  #dashboard #box .wrap-title > div[role="button"],
+  #dashboard #box .container-breadcrumb .ant-breadcrumb>span {
+    flex-shrink: 0;
+  }
+
+  #dashboard #box .wrap-title > button,
+  #dashboard #box .wrap-title > div[role="button"] {
+    margin-left: 5em;
+  }
+
+  #dashboard #box .search {
+    margin-bottom: 10px;
+  }
+
+  #dashboard #box .search,
+  #dashboard #box .container-orders-by {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 400px) {
+  #dashboard #box .testimonials-action-buttons {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 392px) {
+  #dashboard #box .wrapper>.title {
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 350px) {
+  #dashboard #box form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #dashboard #menu-left>.wrapper-list .ant-list-item-meta-description {
+    display: none;
+  }
+
+  #dashboard #menu-left>.wrapper-list .ant-list-item-meta {
+    align-items: center;
+  }
+
+  #dashboard #menu-left>.wrapper-list .ant-list-item-meta .ant-list-item-meta-avatar {
+    margin-right: 10px;
+  }
+}

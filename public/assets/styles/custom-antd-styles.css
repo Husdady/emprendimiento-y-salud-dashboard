@@ -1,0 +1,39 @@
+/*------------- Modal de confirmación -------------*/
+.ant-modal-title {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+.ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+.ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
+  font-size: 1.03em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.ant-modal-body .ant-modal-confirm-btns>.ant-btn {
+  border: none;
+  background-color: rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, .5);
+}
+
+.ant-modal-body .ant-modal-confirm-btns>.ant-btn.ant-btn-dangerous {
+  color: var(--bg-white) !important;
+  background-color: var(--bg-red) !important;
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-title {
+  line-height: 1.3
+}
+
+.ant-modal-body .ant-empty-description {
+  color: var(--theme-opacity-300)
+}
+
+body.dark-mode .ant-tooltip-inner {
+  color: var(--bg-dark);
+  background-color: var(--bg-gray-100)
+}

@@ -1,0 +1,37 @@
+#email-confirmation {
+  background-color: var(--bs-white);
+}
+
+#email-confirmation > .wrapper {
+  width: 60%;
+  max-width: 800px;
+}
+
+#email-confirmation > .wrapper .ant-result-icon {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  #email-confirmation > .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #email-confirmation > .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  #email-confirmation > .wrapper .ant-btn {
+    width: 100%;
+    margin: 0;
+    white-space: normal;
+    height: auto;
+  }
+
+  #email-confirmation > .wrapper .ant-btn:last-of-type {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,79 @@
+/*------------- Elementos -------------*/
+#dashboard #box .container-items {
+  column-gap: 15px;
+}
+
+#dashboard #box .container-items .item {
+  border-radius: 6px;
+}
+
+#dashboard #box .container-items .item .title {
+  line-height: 1.15;
+}
+
+#dashboard #box .container-items .item .icon.edit-item {
+  left: 19%;
+}
+
+#dashboard #box .container-items .item .icon.delete-item {
+  left: 5%;
+}
+
+/*------------- Tema claro de Elementos -------------*/
+#dashboard #box .container-items .item {
+  box-shadow: var(--theme-shadow);
+}
+
+/*------------- Tema oscuro de Elementos -------------*/
+#dashboard #box .container-items .item,
+#dashboard #box .container-items .ant-skeleton.ant-skeleton-active .ant-skeleton-button {
+  background-color: var(--theme-bg-default);
+}
+
+body.dark-mode #dashboard #box .container-items .item .title,
+.container-modal-items.dark-mode .ant-modal-body form .form-field-container .checkbox>.title {
+  color: var(--bg-gray-100)
+}
+
+/*------------- Dashboard Modal -------------*/
+.container-modal-items form .form-field-container .checkbox>.title {
+  line-height: 1.45;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: .95em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container-modal-items .ant-modal-body::-webkit-scrollbar-thumb,
+.container-modal-items .ant-modal-body form .form-field-container .ant-row::-webkit-scrollbar-thumb,
+.container-modal-items .ant-modal-body form .form-field-container .checkbox.active>.title:before {
+  background-color: var(--bg-purple) !important;
+}
+
+/*------------- Tema oscuro de Dashboard Modal -------------*/
+.container-modal-items.dark-mode .ant-modal-body form .form-field-container .checkbox>.title:before {
+  background-color: rgba(255, 255, 255, .065)
+}
+
+@media (min-width: 1025px) {
+  .container-modal-items .ant-modal-body {
+    overflow-y: auto;
+    max-height: 500px !important;
+  }
+
+  .container-modal-items .ant-modal-body::-webkit-scrollbar {
+    width: 6px
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-modal-items .ant-modal-body {
+    overflow: hidden;
+  }
+
+  .container-modal-items form .form-field-container .ant-row {
+    overflow-y: auto;
+    height: 100%;
+    max-height: 240px;
+  }
+}

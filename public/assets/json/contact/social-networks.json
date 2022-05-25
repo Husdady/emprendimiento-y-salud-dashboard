@@ -1,0 +1,17 @@
+[
+  {
+    "color": "#00acee",
+    "title": "Twitter",
+    "icon": ["fab", "twitter"]
+  },
+  {
+    "color": "#cd201f",
+    "title": "Instagram",
+    "icon": ["fab", "instagram"]
+  },
+  {
+    "color": "#3b5998",
+    "title": "Facebook",
+    "icon": ["fab", "facebook-square"]
+  }
+]

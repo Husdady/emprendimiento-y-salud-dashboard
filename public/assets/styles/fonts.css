@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Electrolize';
+  src: url('../fonts/Electrolize-Regular.woff2') format('woff2'),
+      url('../fonts/Electrolize-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IMFellEnglishSC';
+  src: url('../fonts/IMFellEnglishSC-Regular.woff2') format('woff2'),
+      url('../fonts/IMFellEnglishSC-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+      url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/MavenPro-Black.woff2') format('woff2'),
+      url('../fonts/MavenPro-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../fonts/NotoSans.woff2') format('woff2'),
+      url('../fonts/NotoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recursive';
+  src: url('../fonts/Recursive-SansLinearLight.woff2') format('woff2'),
+      url('../fonts/Recursive-SansLinearLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+      url('../fonts/Ubuntu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,102 @@
+/*------------- Información personal del usuario -------------*/
+#dashboard #box .container-personal-information {
+  gap: 40px;
+  overflow-x: auto;
+}
+
+#dashboard #box .container-personal-information::-webkit-scrollbar {
+  height: 6px;
+}
+
+#dashboard #box .container-personal-information .user-field {
+  flex-shrink: 0;
+}
+
+/*------------- Tema claro de Información personal del usuario -------------*/
+#dashboard #box .connection-status > button span:last-child,
+#dashboard #box .container-personal-information .user-field .title {
+  font-weight: var(--theme-text-fontWeight);
+}
+
+#dashboard #box .container-personal-information .user-field > span,
+#dashboard #box .container-personal-information .user-field .title {
+  color: var(--theme-opacity-400);
+}
+
+/*------------- Tema oscuro de Información personal del usuario -------------*/
+#dashboard #box .user-information.edit-password {
+  width: 100%;
+}
+
+/*------------- Estado de conexión -------------*/
+#dashboard #box .connection-status > button .circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-green-100);
+}
+
+#dashboard #box .connection-status > button .text {
+  padding-left: 2em;
+}
+
+#dashboard #box .connection-status > button {
+  background-color: var(--theme-opacity-100);
+}
+
+#dashboard #box .connection-status > button span:last-child {
+  color: var(--theme-text-default);
+  border-left: 1px solid var(--theme-opacity-300);
+}
+
+/*------------- Switch -------------*/
+#dashboard #box .switch-theme .ant-switch .ant-switch-handle {
+  top: -2px;
+  width: 25px;
+  height: 25px;
+}
+
+#dashboard #box .switch-theme .ant-switch .ant-switch-handle::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+}
+
+/*------------- Switch tema claro -------------*/
+#dashboard #box .switch-theme .ant-switch .ant-switch-handle {
+  left: 0;
+}
+
+#dashboard #box .switch-theme .ant-switch-checked .ant-switch-handle {
+  left: calc(100% - 24px);
+}
+
+body.light-mode #dashboard #box .switch-theme .ant-switch[aria-checked=false] {
+  background-color: #b6e1e5
+}
+
+body.light-mode #dashboard #box .switch-theme .ant-switch[aria-checked=false] .ant-switch-handle::before {
+  content: "\f185";
+  color: #f89d07;
+  border: 3px solid #b6e1e5
+}
+
+/*------------- Switch tema oscuro -------------*/
+body.dark-mode #dashboard #box .switch-theme .ant-switch[aria-checked=true] {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+body.dark-mode #dashboard #box .switch-theme .ant-switch[aria-checked=true] .ant-switch-handle::before {
+  content: "\f755";
+  color: #f89d07;
+  background-color: var(--bg-dark);
+  border: 3px solid rgba(255, 255, 255, .1)
+}
+
+@media (max-width: 600px) {
+  #dashboard #box .container-personal-information::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,234 @@
+/*------------- Skeletons -------------*/
+#dashboard #box .container-skeleton {
+  padding: 2em 3em 2.5em;
+  background-color: var(--theme-bg-default);
+}
+
+#dashboard #box .container-skeleton .form-button>span {
+  height: 30px
+}
+
+/*------------- Subir foto -------------*/
+#dashboard #box #upload-image,
+#dashboard #box .container-skeleton #upload-image {
+  width: 30%;
+}
+
+#dashboard #box #upload-image .wrapper-image .opacity-wrapper {
+  z-index: 1;
+}
+
+#dashboard #box #upload-image .wrapper-image .opacity-wrapper.preview:hover {
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+#dashboard #box #upload-image .wrapper-image .opacity-wrapper.preview:hover svg {
+  color: rgba(255, 255, 255, .45);
+}
+
+#dashboard #box .wrapper #upload-image .wrapper-image .ant-avatar {
+  background-color: var(--theme-opacity-100);
+}
+
+#dashboard #box #upload-image > button {
+  padding-top: .35em;
+  padding-bottom: .35em;
+}
+
+#dashboard #box #upload-image>button,
+#dashboard #box .form-field-container button.save-button,
+#dashboard #box .form-field-container .role-button {
+  color: var(--bg-white);
+  background-color: var(--bg-darkrose);
+}
+
+/*------------- Información del usuario -------------*/
+#dashboard #box .form-field-container,
+#dashboard #box .container-skeleton .form-field-container {
+  width: 65%;
+}
+
+#dashboard #box .form-field-container .container-title {
+  margin-top: .75em;
+  margin-bottom: .75em;
+}
+
+#dashboard #box .form-field-container .field,
+.dashboard-modal form .form-field-container .field {
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+#dashboard #box .form-field-container textarea.field::-webkit-scrollbar {
+  width: 4px;
+} 
+
+/*------------- Modo claro de titulos del formulario -------------*/
+#dashboard #box .form-field-container .field,
+.dashboard-modal form .form-field-container .field,
+#dashboard #box .form-field-container .password svg,
+.ant-collapse > .ant-collapse-item > .ant-collapse-header,
+#dashboard #box .wrapper .form-field-container .container-title>svg,
+#dashboard #box .wrapper .form-field-container .container-title>.title {
+  color: var(--theme-opacity-400);
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header,
+#dashboard #box .wrapper .form-field-container .container-title>.title {
+  font-weight: var(--theme-text-fontWeight);
+}
+
+/*------------- Modo claro de placeholders de campos -------------*/
+#dashboard #box .wrapper .form-field-container .field {
+  color: var(--theme-text-default);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#dashboard #box #upload-image .wrapper-image .opacity-wrapper,
+#dashboard #box .wrapper .form-field-container .field::placeholder {
+  color: var(--theme-opacity-300);
+}
+
+body.light-mode #dashboard #box .wrapper.light-mode .form-field-container .ant-collapse-header,
+body.light-mode #dashboard #box .wrapper .form-field-container .field,
+body.light-mode #dashboard #box .wrapper .form-field-container .ant-collapse>.ant-collapse-item {
+  background-color: rgba(0, 0, 0, .025);
+}
+
+/*------------- Modo oscuro de placeholders de campos -------------*/
+body.dark-mode #dashboard #box .wrapper .form-field-container .field,
+body.dark-mode #dashboard #box .wrapper .form-field-container .ant-collapse>.ant-collapse-item {
+  background-color: var(--theme-opacity-100);
+}
+
+/*------------- Roles de usuario -------------*/
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  display: flex;
+  align-items: center;
+}
+
+#dashboard #box .form-field-container .ant-collapse,
+#dashboard #box .form-field-container .ant-collapse .ant-collapse-content {
+  background-color: transparent;
+}
+
+#dashboard #box .form-field-container .ant-collapse .ant-collapse-content {
+  border-top: 1px solid var(--theme-opacity-200)
+}
+
+#dashboard #box .form-field-container .ant-collapse>.ant-collapse-item {
+  border-bottom: 0;
+}
+
+#dashboard #box .form-field-container .role-button {
+  padding: .5em 2em;
+  border-radius: 4px;
+  margin: 3px;
+}
+
+/*------------- Modo claro de Roles de usuario -------------*/
+#dashboard #box .wrapper.light-mode .form-field-container .ant-collapse>.ant-collapse-item {
+  background-color: rgba(0, 0, 0, .025);
+}
+
+/*------------- Modo oscuro de Roles de usuario -------------*/
+#dashboard #box .wrapper.dark-mode .form-field-container .ant-collapse>.ant-collapse-item {
+  background-color: rgba(255, 255, 255, .05);
+}
+
+#dashboard #box .wrapper.dark-mode .form-field-container .ant-collapse-content {
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+/*------------- Tema Oscuro de Modal -------------*/
+.dashboard-modal.dark-mode form .form-field-container .field::placeholder {
+  color: rgba(255, 255, 255, .2);
+}
+
+/*------------- Media queries -------------*/
+@media (max-width: 900px) {
+  /*------------- Skeleton -------------*/
+  #dashboard #box .container-skeleton {
+    flex-direction: column-reverse;
+  }
+
+  #dashboard #box .container-skeleton .form-field-container {
+    margin-top: 3em;
+  }
+
+  #dashboard #box .container-skeleton .form-field-container div.save-button {
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 2em
+  }
+
+  #dashboard #box .ant-skeleton {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #dashboard #box .ant-skeleton .ant-skeleton-header {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #dashboard #box .ant-skeleton .ant-skeleton-header .ant-skeleton-avatar {
+    display: block;
+    margin: 0 auto 1.5em;
+  }
+
+  /*------------- Formulario -------------*/
+  #dashboard #box .wrapper form {
+    flex-direction: column-reverse;
+  }
+
+  #dashboard #box #upload-image,
+  #dashboard #box .form-field-container,
+  #dashboard #box .container-skeleton #upload-image,
+  #dashboard #box .container-skeleton .form-field-container {
+    width: 100%;
+  }
+
+  #dashboard #box #upload-image {
+    margin-top: 2.5em;
+  }
+
+  #dashboard #box #upload-image .wrapper-image {
+    margin-bottom: 1em;
+  }
+
+  /*------------- Información del usuario -------------*/
+  #dashboard #box form.flex,
+  #dashboard #box .container-skeleton {
+    position: relative;
+  }
+
+  #dashboard #box .form-field-container button.save-button {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1081px) {
+  #dashboard #box #upload-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+  }
+
+  #dashboard #box .form-field-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #dashboard #box form.flex {
+    padding: 11px 8px 24px !important;
+  }
+
+  #dashboard #box .container-skeleton {
+    padding: 0px 20px 17px;
+  }
+
+}

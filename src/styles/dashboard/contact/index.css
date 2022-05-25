@@ -1,0 +1,74 @@
+#dashboard #box .wrapper .form-field-container .side-left-content {
+  top: 50%;
+  left: 1.5%;
+  max-width: 32%;
+}
+
+/*------------- Redes sociales -------------*/
+#dashboard #box .wrapper .form-field-container .side-left-content .instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+/*------------- Correos electrónicos -------------*/
+#dashboard #box .wrapper .form-field-container .side-left-content .personal-emails {
+  max-height: 188px;
+  overflow-y: auto;
+}
+
+#dashboard #box .wrapper .form-field-container .side-left-content .personal-emails::-webkit-scrollbar {
+  width: 3px;
+}
+
+#dashboard #box .wrapper .form-field-container .side-left-content .personal-emails .ant-tag {
+  border: none;
+  margin-bottom: .5em;
+}
+
+/*------------- Modo claro de Correos electrónicos -------------*/
+#dashboard #box .wrapper .form-field-container .side-left-content > .container-title {
+  border-bottom: 1px solid var(--theme-opacity-200);
+}
+
+#dashboard #box .wrapper .form-field-container .side-left-content .personal-emails .ant-tag {
+  color: var(--theme-opacity-400);
+  background-color: var(--theme-opacity-200);
+}
+
+#dashboard #box .wrapper .form-field-container .side-left-content .personal-emails .ant-tag .ant-tag-close-icon {
+  color: var(--theme-opacity-200);
+}
+
+/*------------- Media queries -------------*/
+@media (min-width: 1600px) {
+  #dashboard #box .wrapper .form-field-container .side-left-content {
+    top: 43vh;
+    left: 1.5%;
+  }
+  #dashboard #box .wrapper .form-field-container .side-left-content .personal-emails {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 1315px) {
+  #dashboard #box .wrapper .form-field-container .side-left-content {
+    width: 100%;
+    max-width: initial;
+    margin-top: 1em;
+    position: relative !important;
+    top: initial !important;
+    left: initial !important;
+  }
+
+  #dashboard #box .wrapper .form-field-container .side-left-content .personal-emails {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+  }
+
+  #dashboard #box .wrapper .form-field-container .side-left-content .personal-emails > div > span {
+    display: initial !important;
+  }
+}

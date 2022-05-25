@@ -1,0 +1,18 @@
+[
+  { "title": "Crear usuarios", "permission": "createUsers" },
+  { "title": "Editar usuarios", "permission": "editUsers" },
+  { "title": "Eliminar usuarios", "permission": "deleteUsers" },
+  { "title": "Restaurar usuarios", "permission": "restoreUsers" },
+  { "title": "Crear roles", "permission": "createRoles" },
+  { "title": "Editar roles", "permission": "editRoles" },
+  { "title": "Eliminar roles", "permission": "deleteRoles" },
+  { "title": "Crear testimonios", "permission": "createTestimonials" },
+  { "title": "Editar testimonios", "permission": "editTestimonials" },
+  { "title": "Eliminar testimonios", "permission": "deleteTestimonials" },
+  { "title": "Crear productos", "permission": "createProducts" },
+  { "title": "Editar productos", "permission": "editProducts" },
+  { "title": "Eliminar productos", "permission": "deleteProducts" },
+  { "title": "Afiliar clientes", "permission": "affiliateClients" },
+  { "title": "Afiliar empresarios", "permission": "affiliateEntrepreneurs" },
+  { "title": "Editar información de Contacto", "permission": "editContactInformacion" }
+]

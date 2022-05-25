@@ -1,0 +1,198 @@
+/*------------- Dashboard -------------*/
+#dashboard {
+  overflow: hidden auto;
+  background-color: var(--theme-bg-main)
+}
+
+#dashboard #go-back {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+#dashboard #go-back,
+#dashboard #menu-left,
+#dashboard #box > .wrapper {
+  box-shadow: var(--theme-shadow);
+}
+
+#dashboard #go-back,
+#dashboard #menu-left,
+#dashboard #box > .wrapper,
+#dashboard #box .ant-select,
+#dashboard #box .search .ant-input-affix-wrapper,
+#dashboard #box .search .ant-input-affix-wrapper .ant-input {
+  background-color: var(--theme-bg-default);
+}
+
+/*------------- Menu izquierdo -------------*/
+#dashboard #menu-left .wrapper-list.scroller {
+  max-height: 68vh;
+  overflow-y: scroll;
+}
+
+body.light-mode #dashboard #menu-left .connection-status {
+  border: 3px solid #f4f4f4
+}
+
+body.dark-mode #dashboard #menu-left .connection-status {
+  border: 3px solid #0d142b
+}
+
+#dashboard #menu-left .wrapper-list .ant-list-item-meta-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#dashboard #menu-left>.wrapper-list .ant-list-item {
+  padding: 25px 20px;
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--theme-opacity-100);
+}
+
+#dashboard #go-back,
+#dashboard #menu-left>.wrapper-list .ant-list-item .icon {
+  color: var(--theme-text-darkrose)
+}
+
+#dashboard #box .container-breadcrumb .ant-breadcrumb a,
+#dashboard #box .container-breadcrumb .ant-breadcrumb-separator,
+#dashboard #menu-left>.wrapper-list .ant-list-item-meta-description,
+#dashboard #box .container-orders-by>.ant-select .ant-select-arrow,
+#dashboard #box .search .ant-input-affix-wrapper .ant-input::placeholder,
+#dashboard #box .container-orders-by>.ant-select .ant-select-selector .ant-select-selection-placeholder {
+  color: var(--theme-opacity-300);
+}
+
+#dashboard #menu-left .menu-left-content-lists .wrapper-list .navigation-title {
+  font-size: .85em;
+  margin: 15px 20px 10px;
+}
+
+#dashboard #box .container-breadcrumb .ant-breadcrumb-link a:hover,
+#dashboard #menu-left .menu-left-content-lists .wrapper-list .navigation-title {
+  color: var(--bg-darkrose);
+}
+
+#dashboard #menu-left .menu-left-content-lists .wrapper-list .ant-list-item {
+  border: none;
+  padding: 15px 20px 15px 25px;
+}
+
+#dashboard #menu-left .menu-left-content-lists .wrapper-list .ant-list-item.item:hover {
+  background-color: var(--bg-darkrose);
+  border-left: 5px solid var(--bg-yellow);
+}
+
+#dashboard #menu-left #sign-out {
+  width: 90%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: .95em;
+}
+
+#dashboard #menu-left #author {
+  font-size: .85em;
+}
+
+/*------------- Tema claro de Menú Izquierdo -------------*/
+body.light-mode #menu-left .wrapper-list .ant-list-item-meta-title {
+  color: var(--bg-dark)
+}
+
+body.light-mode #dashboard #menu-left .menu-left-content-lists .wrapper-list .ant-list-item.item:hover svg, body.light-mode #dashboard #menu-left .menu-left-content-lists .wrapper-list .ant-list-item.item:hover .ant-list-item-meta-title {
+  font-weight: normal;
+  color: var(--bg-white) !important;
+}
+
+/*------------- Tema oscuro de Menú Izquierdo -------------*/
+body.dark-mode #menu-left .wrapper-list .ant-list-item-meta-avatar,
+body.dark-mode #menu-left .wrapper-list .ant-list-item-meta-title,
+body.dark-mode #dashboard #menu-left .menu-left-content-lists .wrapper-list .ant-list-item .icon,
+#dashboard #box .ant-select .ant-select-arrow,
+body.dark-mode .dashboard-modal .ant-modal-footer .ant-btn:first-child,
+body.dark-mode #dashboard #box .search .ant-input-affix-wrapper .ant-input,
+body.light-mode #dashboard #box .search .ant-input-affix-wrapper .ant-input::placeholder {
+  color: var(--bg-gray-100)
+}
+
+/*------------- Contenedor de la parte derecha -------------*/
+#dashboard #box {
+  width: calc(100% - 385px);
+}
+
+/*------------- Wrap Title -------------*/
+#dashboard #box .wrapper>.title, #dashboard #box .wrap-title .title {
+  font-size: 1.35em;
+}
+
+#dashboard #box .container-breadcrumb .ant-breadcrumb-link,
+#dashboard #box .wrapper>.title, #dashboard #box .wrap-title .title {
+  font-weight: var(--theme-text-fontWeight);
+}
+
+#dashboard #box .container-breadcrumb .ant-breadcrumb-link,
+#dashboard #box .wrapper>.title, #dashboard #box .wrap-title .title,
+#dashboard #box .wrap-title > .d-flex svg {
+  color: var(--theme-opacity-400);
+}
+
+#dashboard #box .ant-select .ant-select-selector {
+  box-shadow: none !important;
+  background-color: transparent;
+  border: 1px solid var(--theme-opacity-200);
+}
+
+/*------------- Botones de acción -------------*/
+#dashboard #box .container-action-buttons .action-button {
+  color: #ffffff;
+  padding: .75em 1.5em;
+}
+
+#dashboard #box .container-action-buttons .action-button:last-of-type {
+  margin-right: 0 !important;
+}
+
+/*------------- Búsqueda -------------*/
+#dashboard #box .search .ant-input-group-addon {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#dashboard #box .search .ant-input-affix-wrapper {
+  padding: 8px 11px 8px 11px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#dashboard #box .search .ant-input-affix-wrapper.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+#dashboard #box .search .ant-input-group-addon,
+#dashboard #box .search .ant-input-affix-wrapper .anticon.ant-input-clear-icon {
+  color: var(--theme-opacity-200)
+}
+
+/*------------- Tema oscuro de Búsqueda -------------*/
+body.dark-mode #dashboard #box .search .ant-input-group-addon {
+  background-color: #171a2c;
+}
+
+body.dark-mode #dashboard #box .search .ant-input-group-addon,
+body.dark-mode #dashboard #box .search .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-focused) {
+  border: none;
+}
+
+/*------------- Ordenar por -------------*/
+#dashboard #box .container-orders-by>.ant-select:first-child {
+  width: 48.5%;
+}
+
+#dashboard #box .container-orders-by>.ant-select:last-child {
+  width: 50%;
+}
+
+#dashboard #box .container-orders-by>.ant-select .ant-select-selector {
+  height: 37px;
+  align-items: center;
+}

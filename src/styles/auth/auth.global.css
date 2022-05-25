@@ -1,0 +1,95 @@
+#auth-container {
+  overflow-y: auto;
+  padding: 58px 0 25px;
+}
+
+#auth-container>.wrapper {
+  width: 350px;
+  padding: 2em;
+  border-radius: .75em;
+  background-color: var(--bg-white);
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, .45);
+}
+
+#auth-container>.wrapper .logo {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#auth-container>.wrapper .back-to-home {
+  top: 17px;
+}
+
+#auth-container>.wrapper .back-to-home.to-left {
+  left: 20px;
+}
+
+#auth-container>.wrapper .back-to-home.to-right {
+  right: 20px;
+}
+
+#auth-container>.wrapper>.title {
+  width: 70%;
+  max-width: 300px;
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin-top: 25px;
+}
+
+#auth-container>.wrapper .form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+
+/*#auth-container>.wrapper .password,*/
+#auth-container>.wrapper .form-control {
+  border-bottom: 1px solid var(--bg-darkrose);
+}
+
+#auth-container>.wrapper .form-control::placeholder {
+  color: rgba(0, 0, 0, .35);
+}
+
+#auth-container>.wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#auth-container>.wrapper .error-message {
+  line-height: 1.25;
+  flex-wrap: nowrap;
+}
+
+#auth-container>.wrapper .links .link {
+  color: inherit;
+  color: var(--bs-danger);
+}
+
+#auth-container>.wrapper .links .link:visited {
+  color: var(--bs-purple);
+}
+
+@media (max-width: 900px) {
+  #auth-container>.wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  #auth-container {
+    font-size: 16px;
+  }
+
+  #auth-container>.wrapper {
+    width: 92%;
+    padding: 2em 1.45em
+  }
+}
+
+@media (max-width: 400px) {
+  #auth-container>.wrapper {
+    width: 95%
+  }
+}

@@ -1,0 +1,112 @@
+/*------------- Dashboard Modal -------------*/
+.dashboard-modal .ant-modal-content {
+	background-color: transparent;
+}
+
+.dashboard-modal .ant-modal-header .ant-modal-title {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.dashboard-modal .ant-modal-header {
+  border-bottom: 1px solid var(--theme-opacity-200);
+}
+
+.dashboard-modal .ant-modal-footer {
+  border-top: 1px solid var(--theme-opacity-200);
+}
+
+.dashboard-modal .ant-modal-header,
+.dashboard-modal .ant-modal-body,
+.dashboard-modal .ant-modal-footer,
+.confirmation-delete-modal .ant-modal-body {
+  background-color: var(--theme-bg-default);
+}
+
+.dashboard-modal form .title,
+.dashboard-modal form .container-title,
+.dashboard-modal .ant-modal-close-x,
+.dashboard-modal .ant-modal-header .ant-modal-title,
+.dashboard-modal .modal-item,
+.confirmation-delete-modal .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-content {
+	color: var(--theme-opacity-400);
+}
+
+.dashboard-modal form .title {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.dashboard-modal form .field,
+.dashboard-modal .modal-item {
+	background-color: var(--theme-opacity-100);
+}
+
+.dashboard-modal form .field::placeholder {
+	color: var(--theme-opacity-200);
+}
+
+.dashboard-modal form .title,
+.confirmation-delete-modal .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
+  font-weight: var(--theme-text-fontWeight);
+}
+
+.confirmation-delete-modal .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
+  line-height: 1.2;
+  font-family: 'Rubik', sans-serif;
+}
+
+.confirmation-delete-modal .ant-modal-body .ant-modal-confirm-btns>.ant-btn {
+  color: var(--bg-gray-200);
+  background-color: var(--theme-opacity-200);
+}
+
+/*------------- Tema oscuro de Modal -------------*/
+body.dark-mode .confirmation-delete-modal .ant-modal-body .ant-modal-confirm-body .ant-modal-confirm-title {
+  color: var(--bg-darkyellow);
+}
+
+/*------------- Radio Group Modal -------------*/
+.radio-group-modal {
+  margin: auto;
+  width: 80% !important;
+}
+
+.radio-group-modal .ant-modal-body {
+  padding: 0;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.radio-group-modal .ant-modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.radio-group-modal .ant-radio-wrapper {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.radio-group-modal .ant-radio-wrapper>span:last-child {
+  width: 100%;
+  display: block;
+  font-size: 1.45em;
+  font-family: "Lato", sans-serif;
+}
+
+/*------------- Tema claro de Radio Group Modal -------------*/
+.radio-group-modal.light-mode .ant-modal-body {
+  box-shadow: 0px 3px 15px 1px rgba(0, 0, 0, .15);
+}
+
+/*------------- Tema oscuro de Radio Group Modal -------------*/
+.radio-group-modal.dark-mode .ant-radio-wrapper {
+  border: 1px solid var(--bg-dark);
+  background-color: var(--bg-dark-modal);
+}
+
+.radio-group-modal.dark-mode .ant-radio-wrapper .ant-radio-inner {
+  border-color: var(--bg-gray-200);
+  background-color: var(--bg-dark);
+}

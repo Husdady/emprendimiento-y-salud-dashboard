@@ -1,0 +1,46 @@
+[
+  {
+    "navigationTitle": "Usuarios",
+    "icon": "users",
+    "title": "Administrar usuarios",
+    "path": "/dashboard/users"
+  },
+  {
+    "icon": "user-tag",
+    "title": "Administrar roles",
+    "path": "/dashboard/roles"
+  },
+  {
+    "icon": "user-injured",
+    "title": "Administrar testimonios",
+    "path": "/dashboard/testimonials"
+  },
+  {
+    "navigationTitle": "Productos",
+    "icon": "apple-alt",
+    "title": "Administrar productos Omnilife",
+    "path": "/dashboard/products/omnilife"
+  },
+  {
+    "icon": "shopping-bag",
+    "title": "Administrar productos Seytú",
+    "path": "/dashboard/products/seytu"
+  },
+  {
+    "navigationTitle": "Afiliación",
+    "icon": "address-book",
+    "title": "Afiliar cliente",
+    "path": "/dashboard/membership/client"
+  },
+  {
+    "icon": "user-tie",
+    "title": "Afiliar empresario",
+    "path": "/dashboard/membership/businessman"
+  },
+  {
+    "navigationTitle": "Contacto",
+    "icon": "id-card-alt",
+    "title": "Administrar información de Contacto",
+    "path": "/dashboard/contact"
+  }
+]

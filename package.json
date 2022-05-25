@@ -1,0 +1,49 @@
+{
+  "name": "emprendimiento-y-salud.api",
+  "version": "1.0.0",
+  "description": "Emprendimiento y Salud distribuye productos Omnilife y Seytú, en nuestra página hablamos sobre el negocio Omnilife, nuestra distribuidora independiente Yessica Milagros brinda asesoramiento para emprendender con las redes de mercadeo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fixed": "git add . && git commit -m \"[fixed]\" && git push heroku master"
+  },
+  "keywords": [
+    "emprendimiento-y-salud api",
+    "emprendimiento-y-salud dashboard"
+  ],
+  "author": "Husdady Mena",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "4.7.0",
+    "@fortawesome/fontawesome-svg-core": "1.2.36",
+    "@fortawesome/free-brands-svg-icons": "5.15.4",
+    "@fortawesome/free-regular-svg-icons": "5.15.4",
+    "@fortawesome/free-solid-svg-icons": "5.15.4",
+    "@fortawesome/react-fontawesome": "0.1.16",
+    "antd": "4.16.13",
+    "axios": "0.24.0",
+    "dayjs": "1.10.7",
+    "dotenv": "16.0.0",
+    "next": "12.1.0",
+    "next-auth": "^4.3.3",
+    "next-redux-wrapper": "7.0.5",
+    "nprogress": "0.2.0",
+    "rc-tween-one": "3.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "7.2.6",
+    "redux": "4.1.2",
+    "redux-persist": "6.0.0",
+    "redux-thunk": "2.4.0",
+    "secure-ls": "1.2.6"
+  },
+  "devDependencies": {
+    "@redux-devtools/extension": "3.2.2"
+  },
+  "engines": {
+    "node": "14.19.0",
+    "npm": ">= 7.x"
+  }
+}

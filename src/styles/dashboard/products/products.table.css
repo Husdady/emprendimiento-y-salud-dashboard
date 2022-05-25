@@ -1,0 +1,54 @@
+/*------------- Categorías de Tabla de productos -------------*/
+#dashboard #box .container-table .ant-table-content .container-categories {
+  max-width: 300px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+#dashboard #box .container-table .ant-table-content .container-categories > .ant-tag {
+  margin: 3px;
+}
+
+#dashboard #box .container-table .ant-table-content .container-categories > .ant-tag > b {
+  color: var(--bg-dark);
+}
+
+#dashboard #box .container-table .ant-table-content .container-categories::-webkit-scrollbar {
+  width: 5px;
+}
+
+#dashboard #box .container-table .ant-table-content .container-categories::-webkit-scrollbar-thumb {
+  background-color: var(--bg-orange);
+}
+
+/*------------- Campo 'nombre' de Tabla de productos -------------*/
+#dashboard #box .container-table .ant-table-content .field-product-name > .title {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+#dashboard #box .container-table .ant-table-content .field-product-name > img {
+  border-radius: 4px; 
+}
+
+#dashboard #box .container-table .ant-table-content .field-client-name > .title {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#dashboard #box .container-table .ant-table-content .field-product-name,
+#dashboard #box .container-table .ant-table-content .field-client-name {
+  width: 200px;
+}
+
+#dashboard #box .container-table .ant-table-content .date,
+#dashboard #box .container-table .ant-table-content .description {
+  width: 280px;
+  display: block;
+}
+
+#dashboard #box .container-table .ant-table-content .quantity,
+#dashboard #box .container-table .ant-table-content .field-clientPhone {
+  width: 150px;
+}
