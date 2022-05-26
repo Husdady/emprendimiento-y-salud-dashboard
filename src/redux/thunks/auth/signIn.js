@@ -4,7 +4,7 @@ import { message } from 'antd'
 import { signIn } from 'next-auth/react'
 
 // API
-import { API_URL } from '@api/credentials'
+import { API_URL, PUBLIC_URL } from '@api/credentials'
 
 // Types
 import { SAVE_SESSION } from '@redux/types'
@@ -50,7 +50,7 @@ export default function authorizeSignIn(user, extraData) {
         })
         
         // Definir la ruta que se va a redireccionar
-        res.data.user.callbackUrl = '/dashboard'
+        res.data.user.callbackUrl = PUBLIC_URL + '/dashboard'
         res.data.user.profilePhoto = JSON.stringify(res.data.user.profilePhoto)
 
         // Mantener sesión con next auth y redireccionar al Dashboard
