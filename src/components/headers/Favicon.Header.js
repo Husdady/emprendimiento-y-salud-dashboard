@@ -1,6 +1,9 @@
 // React
 import { Component, Fragment } from 'react'
 
+// API
+import { APP_NAME } from '@api/credentials'
+
 // Favicons
 const faviconAndroid192x192 = require('@public/android-chrome-192x192.png').default.src
 const faviconAndroid512x512 = require('@public/android-chrome-512x512.png').default.src
@@ -19,7 +22,7 @@ export default class FaviconHeader extends Component {
         <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
         <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
         <link rel="shortcut icon" href={faviconIco} />
-        <title>Multiservicios Espay</title>
+        <title>{APP_NAME}</title>
       </Fragment>
     )
   }

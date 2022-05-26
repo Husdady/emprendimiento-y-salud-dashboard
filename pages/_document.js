@@ -15,7 +15,7 @@ export default function Document() {
       <Head>
         <meta name="author" content={pk.author} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/img/multiservicios-espay.webp" />
+        <meta property="og:image" content="/assets/img/emprendimiento-y-salud.webp" />
         <link rel="stylesheet preload" as="style" href={fontawesome} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

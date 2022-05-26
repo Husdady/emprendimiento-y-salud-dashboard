@@ -8,7 +8,6 @@ import Loading from '@root/src/components/layouts/loaders/Loading.Preload'
 import Head from 'next/head'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import { SessionProvider } from "next-auth/react"
 import { useStore, useSelector } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { fas } from '@fortawesome/free-solid-svg-icons'

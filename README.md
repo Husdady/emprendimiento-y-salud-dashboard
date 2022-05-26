@@ -10,4 +10,4 @@ Plataforma para poder administrar facilmente las productos que se muestran en el
 - Seguridad alta
 - Diseño adaptable
 
-Para pobrar esta plataforma, puedes ingresar a http://dashboard-emprendimiento-y-salud.herokuapp.com , crea una cuenta, a continuación se enviará un mensaje a tu correo electrónico para confirmar tu cuenta. Al terminar este proceso podrás iniciar sesión. 
+Para pobrar esta plataforma, puedes ingresar a http://dashboard-emprendimiento-y-salud.herokuapp.com, crea una cuenta, a continuación se enviará un mensaje a tu correo electrónico para confirmar tu cuenta. Al terminar este proceso podrás iniciar sesión. 
