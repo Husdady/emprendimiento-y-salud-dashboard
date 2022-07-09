@@ -205,7 +205,6 @@ class ProductsTable extends Component {
         {/* Botón 'borrar' */}
         <ActionButton
           icon={this.deleteButton}
-          onAction={() => this.props.onDelete(product)}
           onAction={() => this.props.deleteProduct(product)}
         />
       </div>
@@ -236,28 +235,16 @@ class ProductsTable extends Component {
 
 // Obtener estado de productos y sus filtros
 function mapStateToProps({ manageProducts, manageProductsFilters }) {
-  const { seytu, omnilife } = manageProducts
-  
-  // Añadir el límite a 'seytu'
-  Object.assign(seytu, {
-    limit: manageProductsFilters.seytu.products.limit
-  })
-
-  //Añadir el límite a 'omnilife'
-  Object.assign(omnilife, {
-    limit: manageProductsFilters.omnilife.products.limit
-  })
-
   return createState({
     objects: [
-      { name: "seytu", value: seytu },
-      { name: "omnilife", value: omnilife }
+      { name: "seytu", value: manageProducts.seytu },
+      { name: "omnilife", value: manageProducts.omnilife }
     ],
-    state: (obj) => ({
-      limit: obj.limit,
-      products: obj.products,
-      totalProducts: obj.totalProducts,
-      loadingProducts: obj.loadingProducts,
+    state: (value, name) => ({
+      products: value.products,
+      totalProducts: value.totalProducts,
+      loadingProducts: value.loadingProducts,
+      limit: manageProductsFilters[name].products.limit,
     })
   });
 }

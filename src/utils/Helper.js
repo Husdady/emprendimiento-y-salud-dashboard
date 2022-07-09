@@ -136,7 +136,7 @@ export function createState({ objects, state }) {
 
     // Asignar propiedades "name" y como valor "state(value)" a "result"
     Object.assign(result, {
-      [name]: state(value),
+      [name]: state(value, name),
     })
   }
 
