@@ -1,9 +1,7 @@
 // React
-import { Component, Fragment, createRef } from "react";
+import { Component, Fragment } from "react";
 
 // Components
-import Modal from "@layouts/dashboard/common/Dashboard.Modal";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
 import ActionButtons from "@layouts/dashboard/common/Dashboard.ActionButtons";
 import ProductCategories from "@layouts/dashboard/product/Product.Categories";
@@ -19,7 +17,8 @@ import getProductsActions from "@redux/actions/products";
 import { isEmptyArray } from "@utils/Validations";
 import { createState, createDispatch } from "@utils/Helper";
 
-const emptyCategories = require("@assets/img/categories/empty-omnilife-categories.webp").default.src
+const emptyOmnilifeCategories = require("@assets/img/categories/empty-omnilife-categories.webp").default.src
+const emptySeytuCategories = require("@assets/img/categories/empty-omnilife-categories.webp").default.src
 
 class ProductsCategories extends Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class ProductsCategories extends Component {
     this.empty = {
       width: 300,
       height: 300,
-      image: emptyCategories,
+      image: this.props.company === 'seytu' ? emptySeytuCategories : emptyOmnilifeCategories,
     };
 
     this.itemsStyles = {
@@ -105,7 +104,6 @@ class ProductsCategories extends Component {
           title="Categorías"
           wrapTitleIcon="user-tag"
           buttons={this.actionButtons}
-          containerStyle={{ justifyContent: "flex-end" }}
           helpTitle="En esta sección podrás crear nuevas categorías para los productos. Recuerda crear categorías, de acuerdo al tipo de producto que estás creando, debes hacer una relación categoría-producto."
           containerStyle={{ justifyContent: "flex-end", margin: "24px 0px" }}
         />
