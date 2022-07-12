@@ -43,7 +43,7 @@
     "@redux-devtools/extension": "3.2.2"
   },
   "engines": {
-    "node": "14.19.0",
+    "node": ">= 14.19.0",
     "npm": ">= 7.x"
   }
 }

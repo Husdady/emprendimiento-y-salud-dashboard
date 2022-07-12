@@ -51,7 +51,7 @@ export default async function updateProduct(product, extraData) {
 
     const res = await axios({
       method: "PUT",
-      url: `${API_URL}/api/products/${product._id}`,
+      url: `${API_URL}/api/products/${extraData.company}/${product._id}`,
       data: productFormData,
       headers: {
         Accept: "*",

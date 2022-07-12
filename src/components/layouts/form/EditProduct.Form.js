@@ -7,9 +7,7 @@ import Loading from "@layouts/loaders/Loading.Preload";
 import Wrapper from '@layouts/dashboard/common/Dashboard.Wrapper'
 
 // Librarys
-import { connect } from "react-redux";
 import { withRouter } from "next/router";
-import { getSession } from 'next-auth/react';
 
 // API
 import { updateProduct, getProductInformation } from "@api/products";
@@ -58,6 +56,7 @@ class EditProductForm extends Component {
 
   // Actualizar información del producto
   updateProduct({ values, extraData }) {
+    extraData.company = this.props.company;
     updateProduct(values, extraData);
   }
 
