@@ -3,10 +3,10 @@ import { Component, Fragment } from "react";
 
 // Components
 import ActionButtons from "@layouts/dashboard/common/Dashboard.ActionButtons";
-import Testimonials from '@layouts/dashboard/testimonials/Testimonials.Items'
 
 // Containers
 import DashboardContainer from "@containers/DashboardContainer";
+import Testimonials from '@containers/testimonials/Testimonials.Items'
 
 // Librarys
 import { message } from "antd";

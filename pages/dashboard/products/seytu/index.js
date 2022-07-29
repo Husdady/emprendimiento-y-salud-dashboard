@@ -1,12 +1,10 @@
 // React
 import { Component, Fragment } from "react";
 
-// Components
-import ProductsCategories from "@layouts/dashboard/products/Products.Categories";
-import ProductsTableFilters from "@layouts/dashboard/products/Products.TableFilters";
-
 // Containers
 import DashboardContainer from "@containers/DashboardContainer";
+import ProductsCategories from "@containers/products/Products.Categories";
+import ProductsTableFilters from "@containers/products/Products.TableFilters";
 
 // Headers
 import { ProductsHeader } from '@headers'
