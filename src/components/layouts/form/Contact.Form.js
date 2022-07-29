@@ -2,7 +2,7 @@
 import { Component } from "react";
 
 // Components
-import Loading from "@layouts/loaders/Loading.Preload";
+import Loading from "@layouts/loaders/Preload";
 import Wrapper from "@layouts/dashboard/common/Dashboard.Wrapper";
 import DashboardForm from "@layouts/dashboard/common/Dashboard.Form";
 import ContactFormFields from "@layouts/dashboard/contact/Contact.FormFields";
