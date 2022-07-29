@@ -3,7 +3,7 @@ import { Component, Fragment, createRef } from 'react'
 
 // Components
 import { Form, Password } from '@common'
-import AuthContainer, { Submit } from '@layouts/auth/Auth.Container'
+import AuthContainer, { Submit } from "@containers/AuthContainer";
 
 // Librarys
 import { withRouter } from 'next/router'

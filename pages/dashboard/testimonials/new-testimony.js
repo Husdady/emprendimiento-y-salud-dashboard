@@ -3,8 +3,10 @@ import { Component } from "react";
 
 // Components
 import TestimonyForm from "@layouts/form/Testimony.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // API
 import { createTestimony } from "@api/testimony";
@@ -29,7 +31,7 @@ export default class CreateNewTestimony extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
         {/* Información del usuario */}
         <WrapTitle
           icon="user-plus"
@@ -42,7 +44,7 @@ export default class CreateNewTestimony extends Component {
           onSubmit={createTestimony}
           saveButtonTitle="Guardar testimonio"
         />
-      </Container>
+      </DashboardContainer>
     );
   }
 }

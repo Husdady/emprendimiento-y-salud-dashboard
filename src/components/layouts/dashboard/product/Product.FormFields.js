@@ -5,9 +5,9 @@ import { Component, Fragment } from "react";
 import ProductBenefits from "./Product.Benefits";
 import ProductSelectCategory from "./Product.SelectCategory";
 import { renderError } from '@root/src/components/common/Form'
-import { Title, FieldArea, FieldsGroup } from "@layouts/dashboard/common/Dashboard.Form"
+import { Title, Field, FieldArea, FieldsGroup } from "@layouts/dashboard/common/Dashboard.Form"
 
-export default class ProductFormFields extends Component {
+export default class FormFields extends Component {
   shouldComponentUpdate(nextProps) {
     const nextValues = nextProps.extraData.values
     const prevValues = this.props.extraData.values
@@ -17,35 +17,8 @@ export default class ProductFormFields extends Component {
     return (nextValues !== prevValues) || (nextErrors !== prevErrors)
   }
 
-  // Renderizar campos 'name' y 'price'
-  renderPrimaryFields = ({ values, setFieldValue, errors }) => {
-    return [
-      {
-        icon: 'box',
-        title: "Nombre del producto:",
-        error: errors.name,
-        input: {
-          value: values.name,
-          placeholder: "Ingresa el nombre del producto",
-          onChange: (e) => setFieldValue("name", e.target.value),
-        },
-      },
-      {
-        icon: 'dollar-sign',
-        title: "Precio:",
-        error: errors.price,
-        input: {
-          type: "number",
-          value: values.price,
-          placeholder: "Ingresa el precio del producto",
-          onChange: (e) => setFieldValue("price", e.target.value),
-        },
-      },
-    ]
-  }
-
-  // Renderizar campos 'content' y 'stock'
-  renderSecondaryFields = ({ values, setFieldValue, errors }) => {
+  // Renderizar campos 'content' y 'categories'
+  renderGroupFields = ({ values, setFieldValue, errors }) => {
     return [
       {
         icon: 'balance-scale-right',
@@ -56,42 +29,6 @@ export default class ProductFormFields extends Component {
           placeholder: "Ingresa el contenido del producto",
           onChange: (e) => setFieldValue("content", e.target.value),
         },
-      },
-      {
-        icon: 'cubes',
-        title: "Total de unidades:",
-        error: errors.stock,
-        input: {
-          type: "number",
-          value: values.stock,
-          placeholder: "Ingresa el stock del producto",
-          onChange: (e) => setFieldValue("stock", e.target.value),
-        },
-      },
-    ]
-  }
-
-  // Renderizar campos 'benefits' y 'categories'
-  renderTerciaryFields = ({ values, setFieldValue, setFormStatus, errors }) => {
-    return [
-      {
-        icon: "hand-sparkles",
-        title: "Beneficios:",
-        error: errors.benefits,
-        customField: (
-          <ProductBenefits
-            data={values.benefits}
-            extraData={{
-              setFieldValue: setFieldValue,
-              setFormStatus: setFormStatus,
-              addBenefit: (newBenefit) => {
-                setFieldValue("benefits", [
-                  ...values.benefits, newBenefit,
-                ]);
-              },
-            }}
-          />
-        ),
       },
       {
         icon: "tags",
@@ -109,21 +46,21 @@ export default class ProductFormFields extends Component {
   }
 
   render() {
-    const mq = window.innerWidth <= 768;
-    const { values, setFieldValue, errors } = this.props.extraData
-    const primaryFields = this.renderPrimaryFields(this.props.extraData)
-    const secondaryFields = this.renderSecondaryFields(this.props.extraData)
-    const terciaryFields = this.renderTerciaryFields(this.props.extraData)
+    const { values, errors, setFieldValue, setFormStatus } = this.props.extraData
+    const secondaryFields = this.renderGroupFields(this.props.extraData)
 
     return (
       <Fragment>
-        {/* Grupo de campos 'name' y 'price' */}
-        <FieldsGroup
-          fields={primaryFields}
-          containerStyle={{
-            marginBottom: errors.name || errors.price ? "3em" : 0
-          }}
+        {/* Nombre del producto */}
+        <Title icon='box'>Nombre del producto:</Title>
+        <Field
+          value={values.name}
+          placeholder="Ingresa el nombre del producto"
+          onChange={(e) => setFieldValue("name", e.target.value)}
         />
+
+        {/* Error en campo 'name' del formulario */}
+        {renderError(errors.name)}
 
         {/* Descripción del producto */}
         <Title icon='comment'>Descripción del producto:</Title>
@@ -146,16 +83,25 @@ export default class ProductFormFields extends Component {
           }}
         />
 
-        {/* Grupo de campos 'benefits' y 'categories' */}
-        <FieldsGroup
-          fields={terciaryFields}
-          containerStyle={{
-            marginTop: "1em",
-            marginBottom: mq ? 0 : (errors.benefits || errors.categories) ? "3em" : 0,
+        {/* Beneficios del producto */}
+        <Title icon='box'>Beneficios del producto:</Title>
+        <ProductBenefits
+          data={values.benefits}
+          extraData={{
+            setFieldValue: setFieldValue,
+            setFormStatus: setFormStatus,
+            addBenefit: (newBenefit) => {
+              setFieldValue("benefits", [
+                ...values.benefits, newBenefit,
+              ]);
+            },
           }}
         />
 
-        {/* Nombre del producto */}
+        {/* Error en campo 'name' del formulario */}
+        {renderError(errors.benefits)}
+
+        {/* Modo de empleo del producto */}
         <Title icon='coffee'>Modo de empleo del producto</Title>
         <FieldArea
           rows={5}

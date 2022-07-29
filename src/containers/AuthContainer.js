@@ -7,10 +7,6 @@ import { Icon, Help, Button } from '@common'
 // Librarys
 import Image from 'next/image'
 import { withRouter } from 'next/router'
-import { connect } from 'react-redux'
-
-// Reducers
-import { getAuthenticationState } from '@redux/reducers/auth'
 
 // Utils
 import { classnames } from '@utils/Helper'

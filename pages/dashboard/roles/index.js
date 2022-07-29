@@ -5,8 +5,10 @@ import { Component, createRef } from "react";
 import { Modal, OkButtonModal, CancelButtonModal } from '@common'
 import RoleForm from "@layouts/form/Role.Form";
 import Items from "@layouts/dashboard/common/Dashboard.Items";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import ActionButtons from "@layouts/dashboard/common/Dashboard.ActionButtons";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Librarys
 import { message } from "antd";
@@ -151,7 +153,7 @@ class RolesHome extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
         <UserRolesHeader />
 
         {/* Botones de acción */}
@@ -172,7 +174,7 @@ class RolesHome extends Component {
         >
           {this.renderModalFormContent}
         </Modal>
-      </Container>
+      </DashboardContainer>
     );
   }
 }

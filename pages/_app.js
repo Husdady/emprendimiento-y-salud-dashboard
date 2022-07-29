@@ -2,7 +2,7 @@
 import { Fragment, useEffect, useState, useCallback, useMemo } from 'react'
 
 // Components
-import Loading from '@root/src/components/layouts/loaders/Loading.Preload'
+import Loading from '@root/src/components/layouts/loaders/Preload'
 
 // Librarys
 import Head from 'next/head'
@@ -36,7 +36,7 @@ import '@assets/styles/global.css'
 import '@assets/styles/custom-antd-styles.css'
 
 // Loaders
-import '@styles/loaders/loading.preload.css'
+import '@layouts/loaders/Preload/styles.css'
 
 // Auth Styles
 import "@styles/auth/auth.global.css";

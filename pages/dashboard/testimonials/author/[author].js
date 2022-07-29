@@ -4,11 +4,10 @@ import { Component } from "react";
 // Components
 import Skeleton from "@layouts/skeletons/Skeleton.Form";
 import TestimonyForm from "@layouts/form/Testimony.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
 
-// Librarys
-import { connect } from "react-redux";
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // API
 import { editTestimony, getAuthorTestimony } from "@api/testimony";
@@ -40,7 +39,7 @@ export default class EditTestimony extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
         {/* Información del usuario */}
         <WrapTitle
           icon="user-edit"
@@ -50,7 +49,7 @@ export default class EditTestimony extends Component {
 
         {/* Información del autor */}
         <AuthorInformation />
-      </Container>
+      </DashboardContainer>
     );
   }
 }

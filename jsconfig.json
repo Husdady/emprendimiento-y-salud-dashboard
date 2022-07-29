@@ -16,6 +16,7 @@
       "@utils/*": ["src/utils/*"],
       "@themes/*": ["src/themes/*"],
       "@redirects/*": ["redirects/*"],
+      "@containers/*": ["src/containers/*"],
       "@layouts/*": ["src/components/layouts/*"],
       "@common": ["src/components/common/_exports"],
     	"@headers": ["src/components/headers/_exports"],

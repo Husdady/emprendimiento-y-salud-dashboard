@@ -2,10 +2,11 @@
 import { Component, Fragment } from "react";
 
 // Components
-import Items from "@layouts/dashboard/common/Dashboard.Items";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import ActionButtons from "@layouts/dashboard/common/Dashboard.ActionButtons";
 import Testimonials from '@layouts/dashboard/testimonials/Testimonials.Items'
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Librarys
 import { message } from "antd";
@@ -73,7 +74,7 @@ class TestimonialsPage extends Component {
         {/* Head */}
         <TestimonialsHeader />
 
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Botones de acción */}
           <ActionButtons
             buttons={this.actionButtons}
@@ -85,7 +86,7 @@ class TestimonialsPage extends Component {
           />
 
           <Testimonials navigateTo={this.navigateTo} />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

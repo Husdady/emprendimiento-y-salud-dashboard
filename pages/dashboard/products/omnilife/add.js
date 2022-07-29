@@ -3,8 +3,10 @@ import { Component, Fragment } from 'react';
 
 // Components
 import ProductForm from "@layouts/form/Product.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { CreateProductHeader } from '@headers'
@@ -50,7 +52,7 @@ export default class CreateProduct extends Component {
         {/* Head */}
         <CreateProductHeader />
       
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Información del producto */}
           <WrapTitle
             icon="apple-alt"
@@ -64,7 +66,7 @@ export default class CreateProduct extends Component {
             saveButtonTitle="Guardar producto"
             onSubmit={this.onCreateNewOmnilifeProduct}
           />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

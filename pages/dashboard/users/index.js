@@ -4,12 +4,14 @@ import { Component, Fragment, createRef } from "react";
 // Components
 import Modal from "@layouts/dashboard/common/Dashboard.Modal";
 import Filters from "@layouts/dashboard/common/Dashboard.Filters";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
 import ActionButtons from "@layouts/dashboard/common/Dashboard.ActionButtons";
 import UserAvatar from "@layouts/dashboard/user/User.Avatar";
 import UsersTable from "@layouts/dashboard/user/tables/Table.Users";
 import DeletedUsersTable from "@layouts/dashboard/user/tables/Table.DeletedUsers";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Librarys
 import { message } from "antd";
@@ -422,7 +424,7 @@ class Users extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
         <UsersHeader />
         
         {/* Filtros de usuarios */}
@@ -479,7 +481,7 @@ class Users extends Component {
 
         {/* Modal que muestra los usuarios */}
         <Modal ref={this.refModal} title="Selecciona un usuario" />
-      </Container>
+      </DashboardContainer>
     );
   }
 }

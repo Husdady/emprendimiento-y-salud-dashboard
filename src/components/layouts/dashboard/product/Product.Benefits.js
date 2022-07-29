@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { isArray } from '@utils/Validations'
 import { updateArrayItem, removeArrayItem } from "@utils/Helper"
 
-export default class ProductBenefits extends Component {
+export default class Benefits extends Component {
   constructor(props) {
     super(props);
     this.refModalForm = createRef();
@@ -37,8 +37,9 @@ export default class ProductBenefits extends Component {
     this.updateBenefit = false
 
     this.DashboardModalAttributes = {
-      title: "Beneficios del producto:",
+      centered: true,
       cancelText: "Cerrar",
+      title: "Beneficios del producto:",
       okText: <OkButtonModal icon="plus" title="Añadir beneficio" color="var(--bs-white)" />,
       onOk: () => {
         this.updateBenefit &&= false

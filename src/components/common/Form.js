@@ -1,5 +1,5 @@
 // React
-import { Component, createRef } from 'react'
+import { Component } from 'react'
 
 // Librarys
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

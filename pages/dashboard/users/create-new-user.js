@@ -3,8 +3,10 @@ import { Component, Fragment } from "react";
 
 // Components
 import UserForm from "@layouts/form/User.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { CreateUserHeader } from '@headers'
@@ -66,7 +68,7 @@ export default class CreateNewUser extends Component {
         {/* Head */}
         <CreateUserHeader />
       
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Información del usuario */}
           <WrapTitle
             icon="user-plus"
@@ -80,7 +82,7 @@ export default class CreateNewUser extends Component {
             saveButtonTitle="Guardar usuario"
             validationSchema={this.userFormSchema}
           />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

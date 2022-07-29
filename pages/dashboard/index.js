@@ -5,10 +5,9 @@ import { Component } from 'react'
 import { Button, Developing } from '@common'
 import Wrapper from '@layouts/dashboard/common/Dashboard.Wrapper'
 import WrapTitle from '@layouts/dashboard/common/Dashboard.WrapTitle'
-import Container from '@layouts/dashboard/common/Dashboard.Container'
 
-// Librarys
-import { connect } from 'react-redux'
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // API
 import { PRODUCTION_URL } from '@api/credentials'
@@ -34,7 +33,7 @@ export default class Dashboard extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems} boxWithPaddingY={false}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems} boxWithPaddingY={false}>
         <DashboardHeader />
 
         <WrapTitle icon="columns" title="Dashboard" className="py-2">
@@ -64,7 +63,7 @@ export default class Dashboard extends Component {
             style={developingStyle}
           />
         </Wrapper>
-      </Container>
+      </DashboardContainer>
     )
   }
 }

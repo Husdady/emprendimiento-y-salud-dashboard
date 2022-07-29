@@ -2,9 +2,11 @@
 import { Component, Fragment } from "react";
 
 // Components
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import ProductsCategories from "@layouts/dashboard/products/Products.Categories";
 import ProductsTableFilters from "@layouts/dashboard/products/Products.TableFilters";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { ProductsHeader } from '@headers'
@@ -29,13 +31,13 @@ export default class Products extends Component {
         {/* Head */}
         <ProductsHeader />
 
-        <Container breadcrumbItems={breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={breadcrumbItems}>
           {/* Categorías de productos */}
           <ProductsCategories company="seytu" defaultColor="var(--bg-darkred)" /> 
 
           {/* Tabla de productos */}
           <ProductsTableFilters company="seytu" />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

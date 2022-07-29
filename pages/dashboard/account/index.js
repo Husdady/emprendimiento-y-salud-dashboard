@@ -3,7 +3,6 @@ import { Component } from "react";
 
 // Components
 import UserForm from "@layouts/form/User.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
 import PersonalInformation from "@layouts/dashboard/account/Account.PersonalInformation";
 import SwitchTheme from "@layouts/dashboard/account/Account.SwitchTheme";
@@ -11,6 +10,9 @@ import CloseMyAccount from "@layouts/dashboard/account/Account.CloseMyAccount";
 import ConnectionStatus from "@layouts/dashboard/account/Account.ConnectionStatus";
 import EditMyPassword from "@layouts/dashboard/account/Account.EditMyPassword";
 import DownloadUserSecretKey from "@layouts/dashboard/account/Account.DownloadUserSecretKey";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Librarys
 import { connect } from "react-redux";
@@ -70,7 +72,7 @@ class Account extends Component {
 
   render() {
     return (
-      <Container breadcrumbItems={this.breadcrumbItems}>
+      <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
         {/* Head */}
         <AccountHeader />
 
@@ -123,7 +125,7 @@ class Account extends Component {
 
         {/* Eliminar cuenta del usuario que ha iniciado sesión */}
         <CloseMyAccount user={this.props.user} />
-      </Container>
+      </DashboardContainer>
     );
   }
 }

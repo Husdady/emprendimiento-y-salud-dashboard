@@ -5,7 +5,9 @@ import { Component, Fragment } from "react";
 import { Developing } from "@common";
 import Wrapper from "@layouts/dashboard/common/Dashboard.Wrapper";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { BusinessmanMembershipHeader } from '@headers'
@@ -29,7 +31,7 @@ export default class BusinessmanMembershipPage extends Component {
         {/* Head */}
         <BusinessmanMembershipHeader />
       
-        <Container breadcrumbItems={breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={breadcrumbItems}>
           {/* Información del usuario */}
           <WrapTitle
             icon="user-tie"
@@ -45,7 +47,7 @@ export default class BusinessmanMembershipPage extends Component {
               style={developingStyle}
             />
           </Wrapper>
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

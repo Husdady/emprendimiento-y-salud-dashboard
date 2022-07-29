@@ -3,7 +3,7 @@ import { Component, Fragment, createRef } from 'react'
 
 // Components
 import { Form, Email, Password, Checkbox } from '@common'
-import AuthContainer, { Submit } from '@layouts/auth/Auth.Container'
+import AuthContainer, { Submit } from "@containers/AuthContainer";
 
 // Librarys
 import Link from 'next/link'
@@ -202,7 +202,7 @@ class Login extends Component {
           </Form>
 
           {/* Enlaces */}
-          <div className="links" className='links text-center'>
+          <div className='links text-center'>
             {this.renderAuthLinks()}
           </div>
         </AuthContainer>

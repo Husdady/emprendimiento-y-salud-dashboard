@@ -3,8 +3,10 @@ import { Component, Fragment } from "react";
 
 // Components
 import ContactForm from "@layouts/form/Contact.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { ContactHeader } from '@headers'
@@ -37,7 +39,7 @@ export default class ContactPage extends Component {
         {/* Head */}
         <ContactHeader />
 
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Información del usuario */}
           <WrapTitle
             icon="id-card-alt"
@@ -47,7 +49,7 @@ export default class ContactPage extends Component {
 
           {/* Formulario para editar información de contacto */}
           <ContactForm />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

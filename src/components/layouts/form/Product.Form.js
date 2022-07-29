@@ -8,9 +8,6 @@ import { SaveButton } from "@layouts/dashboard/common/Dashboard.Form";
 import ProductFormFields from "@layouts/dashboard/product/Product.FormFields";
 import ProductMultipleImages from "@layouts/dashboard/product/Product.MultipleImages";
 
-// Librarys
-import { connect } from "react-redux";
-
 // Utils
 import { updateArrayItem, removeArrayItem } from "@utils/Helper";
 
@@ -54,10 +51,6 @@ export default class ProductForm extends Component {
         min: 3,
         max: 36,
       },
-      price: {
-        required: "Por favor ingresa el precio del producto",
-        max: 3,
-      },
       description: {
         required: "Por favor ingresa la descripción del producto",
         min: {
@@ -79,10 +72,6 @@ export default class ProductForm extends Component {
           limit: 100,
           message: "El contenido del producto es muy largo",
         },
-      },
-      stock: {
-        required: "Por favor ingresa el stock del producto",
-        max: 2,
       },
       benefits: {
         required: "Por favor añade los beneficios del producto",

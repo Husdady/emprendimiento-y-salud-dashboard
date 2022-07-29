@@ -3,13 +3,12 @@ import { Component, createRef, Fragment } from "react";
 
 // Components
 import { Form, Email, Password } from "@common";
-import AuthContainer, { Submit } from "@layouts/auth/Auth.Container";
+import AuthContainer, { Submit } from "@containers/AuthContainer";
 
 // Librarys
+import { Input } from "antd";
 import Link from "next/link";
 import { withRouter } from 'next/router'
-import { connect } from "react-redux";
-import { Input } from "antd";
 
 // Headers
 import { RegisterHeader } from '@headers'
@@ -17,9 +16,6 @@ import { RegisterHeader } from '@headers'
 // API
 import { createAccount } from "@api/auth";
 import { APP_NAME } from '@api/credentials'
-
-// Reducers
-import { getAuthenticationState } from '@redux/reducers/auth'
 
 // Redirects
 import { getServerSideProps } from '@redirects/auth'

@@ -2,7 +2,7 @@
 import { Component, Fragment } from "react";
 
 // Components
-import Loading from "@layouts/loaders/Loading.Default";
+import Loading from "@root/src/components/layouts/loaders/Default";
 
 // Librarys
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

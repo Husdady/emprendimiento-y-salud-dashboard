@@ -17,7 +17,7 @@ import { getProductsState } from "@redux/reducers/products";
 // Utils
 import { createState, createDispatch } from '@utils/Helper'
 
-class ProductCategories extends Component {
+class Categories extends Component {
   constructor(props) {
     super(props);
     this.customAvatar = (
@@ -109,4 +109,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductCategories);
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);

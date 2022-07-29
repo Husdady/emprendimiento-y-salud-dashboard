@@ -3,17 +3,14 @@ import { Component, Fragment } from 'react'
 
 // Components
 import { Button } from '@common'
-import MenuLeft from './Dashboard.MenuLeft'
-import Breadcrumb from './Dashboard.Breadcrumb'
+import MenuLeft from '@layouts/dashboard/common/Dashboard.MenuLeft'
+import Breadcrumb from '@layouts/dashboard/common/Dashboard.Breadcrumb'
 
 // Librarys
 import { message } from 'antd'
 import { connect } from 'react-redux'
 import { withRouter } from 'next/router'
 import { signOut, getSession } from 'next-auth/react'
-
-// Actions
-import setAuthentication from '@redux/actions/auth'
 
 // Reducers
 import { getAuthenticationState } from '@redux/reducers/auth'

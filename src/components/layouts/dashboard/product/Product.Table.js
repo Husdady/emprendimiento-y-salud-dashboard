@@ -17,7 +17,7 @@ import getProductsActions from "@redux/actions/products";
 // Utils
 import { truncate, formatDate, createState, createDispatch } from "@utils/Helper";
 
-class ProductsTable extends Component {
+class ProductTable extends Component {
   constructor(props) {
     super(props);
     this.styles = {
@@ -264,4 +264,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductsTable);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductTable);

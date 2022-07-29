@@ -2,7 +2,7 @@
 import { Component } from "react";
 
 // Components
-import { Help, Button } from "@common";
+import { Button } from "@common";
 
 // Utils
 import { isFunction } from "@utils/Validations";

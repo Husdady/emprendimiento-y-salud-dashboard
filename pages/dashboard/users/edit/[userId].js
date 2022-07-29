@@ -4,11 +4,12 @@ import { Component, Fragment } from "react";
 // Components
 import UserForm from "@layouts/form/User.Form";
 import Skeleton from "@layouts/skeletons/Skeleton.Form";
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
 
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
+
 // Librarys
-import { connect } from "react-redux";
 import { withRouter } from "next/router";
 
 // Headers
@@ -48,7 +49,7 @@ export default class EditUser extends Component {
         {/* Head */}
         <EditUserHeader />
 
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Editar la información del producto */}
           <WrapTitle
             icon="user-edit"
@@ -58,7 +59,7 @@ export default class EditUser extends Component {
 
           {/* Formulario para editar un usuario */}
           <EditUserForm />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

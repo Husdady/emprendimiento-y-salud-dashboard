@@ -2,9 +2,11 @@
 import { Component, Fragment } from "react";
 
 // Components
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import ProductsTableFilters from "@layouts/dashboard/products/Products.TableFilters";
 import ProductsCategories from "@layouts/dashboard/products/Products.Categories";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { ProductsHeader } from '@headers'
@@ -29,13 +31,13 @@ export default class OmnilifeProductsPage extends Component {
         {/* Head */}
         <ProductsHeader />
 
-        <Container breadcrumbItems={breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={breadcrumbItems}>
           {/* Categorías de productos */}
           <ProductsCategories company="omnilife" defaultColor="var(--bg-darkpurple)" />
 
           {/* Tabla de productos */}
           <ProductsTableFilters  company="omnilife" />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }

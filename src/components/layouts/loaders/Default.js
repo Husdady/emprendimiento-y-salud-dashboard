@@ -5,7 +5,7 @@ import { Component } from 'react'
 import { Spin } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 
-export default class Loading extends Component {
+export default class Default extends Component {
   shouldComponentUpdate() {
     return false
   }

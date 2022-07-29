@@ -7,7 +7,6 @@ import { Title, Field } from "@layouts/dashboard/common/Dashboard.Form";
 
 // Librarys
 import { Row, Col } from "antd";
-import { connect } from "react-redux";
 
 // Utils
 import userPermissions from '@utils/permissions'

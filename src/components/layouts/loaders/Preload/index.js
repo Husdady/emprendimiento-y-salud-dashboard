@@ -1,16 +1,13 @@
 // React
 import { Component } from 'react'
 
-// Components
-import Wrapper from '@layouts/dashboard/common/Dashboard.Wrapper'
-
 // Librarys
 import Head from 'next/head'
 
 // Utils
 import { classnames } from '@utils/Helper'
 
-export default class Loading extends Component {
+export default class Preload extends Component {
   static defaultProps = {
     containerStyle: { height: 500 },
   }

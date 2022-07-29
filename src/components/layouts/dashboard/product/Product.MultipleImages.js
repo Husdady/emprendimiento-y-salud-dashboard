@@ -18,7 +18,7 @@ import nanoid from "@utils/nanoid";
 import { isEmptyArray } from "@utils/Validations";
 import { formatBytes, generateArray, getImageDimensions } from "@utils/Helper";
 
-class ProductMultipleImages extends Component {
+class MultipleImages extends Component {
   constructor(props) {
     super(props);
     this.totalSelectImages =
@@ -135,7 +135,7 @@ class ProductMultipleImages extends Component {
   }
 }
 
-export default connect(getThemeState)(ProductMultipleImages);
+export default connect(getThemeState)(MultipleImages);
 
 // <------------------------ Extra Components ------------------------>
 class ProductImage extends Component {

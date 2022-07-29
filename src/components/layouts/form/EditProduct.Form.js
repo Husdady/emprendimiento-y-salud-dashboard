@@ -2,8 +2,8 @@
 import { Component } from "react";
 
 // Components
+import Loading from "@layouts/loaders/Preload";
 import ProductForm from "@layouts/form/Product.Form";
-import Loading from "@layouts/loaders/Loading.Preload";
 import Wrapper from '@layouts/dashboard/common/Dashboard.Wrapper'
 
 // Librarys

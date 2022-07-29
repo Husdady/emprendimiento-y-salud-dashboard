@@ -5,7 +5,6 @@ import { Component } from "react";
 import Items from "@layouts/dashboard/common/Dashboard.Items";
 
 // Librarys
-import { message } from "antd";
 import { connect } from "react-redux";
 
 // Actions

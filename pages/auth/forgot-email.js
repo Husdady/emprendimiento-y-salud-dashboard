@@ -4,7 +4,7 @@ import { Component, Fragment, createRef } from 'react'
 // Components
 import { Form, Modal } from '@common'
 import RecoverEmailForm from '@layouts/form/RecoverEmail.Form'
-import AuthContainer, { Submit } from '@layouts/auth/Auth.Container'
+import AuthContainer, { Submit } from "@containers/AuthContainer";
 
 // Headers
 import { ForgotEmailHeader } from '@headers'

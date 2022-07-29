@@ -3,8 +3,10 @@ import { Component, Fragment } from "react";
 
 // Components
 import EditProductForm from "@layouts/form/EditProduct.Form"
-import Container from "@layouts/dashboard/common/Dashboard.Container";
 import WrapTitle from "@layouts/dashboard/common/Dashboard.WrapTitle";
+
+// Containers
+import DashboardContainer from "@containers/DashboardContainer";
 
 // Headers
 import { EditProductHeader } from '@headers'
@@ -41,7 +43,7 @@ export default class EditProduct extends Component {
         {/* Head */}
         <EditProductHeader />
       
-        <Container breadcrumbItems={this.breadcrumbItems}>
+        <DashboardContainer breadcrumbItems={this.breadcrumbItems}>
           {/* Editar la información del producto */}
           <WrapTitle
             icon="user-edit"
@@ -51,7 +53,7 @@ export default class EditProduct extends Component {
 
           {/* Formulario para editar un producto */}
           <EditProductForm company="omnilife" />
-        </Container>
+        </DashboardContainer>
       </Fragment>
     );
   }
